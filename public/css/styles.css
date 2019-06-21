@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css?family=Inconsolata|Montserrat&display=swap");
+
+.app {
+    background-color: #f88757;
+    height: 100vh;
+    background-image: url("/img/minimal.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.9;
+    overflow-x: hidden;
+}
+
+.register-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #f88757;
+    /* opacity: 0.9; */
+    color: black;
+    font-family: "Montserrat";
+    height: 85vh;
+    width: 30rem;
+    filter: drop-shadow(0 0 0.75rem black);
+    border-radius: 20px;
+}
+.button {
+    margin-left: 4rem;
+}
+#welcome {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    z-index: 1;
+}
+
+input {
+    font-family: "Montserrat";
+    padding: 0.3rem;
+    margin: 0.3rem;
+    width: 25rem;
+    height: 10rem;
+}
+p {
+    text-decoration: none;
+    color: black;
+    padding: 4px;
+}
+h1 {
+    font-family: "Inconsolata";
+    font-size: 65px;
+    font-weight: bold;
+    padding-top: 10px;
+    margin: 0 auto;
+}
+img {
+    padding-bottom: 3px;
+    -webkit-user-drag: none;
+}
+h5 {
+    font-family: "Montserrat";
+    color: black;
+    font-size: 20px;
+}
+.logo {
+    position: absolute;
+    top: 7vh;
+    z-index: 3;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: row;
+    height: 13vh;
+    overflow: hidden;
+}
+.nav {
+    font-family: "Montserrat";
+    color: black;
+    font-size: 15px;
+    margin-top: 3rem;
+}
+
+.profilepic {
+    display: flex;
+    justify-content: flex-end;
+    height: 14vh;
+    width: 12vw;
+    left: 50vh;
+    z-index: 8;
+    object-fit: contain;
+    padding-right: 2rem;
+    cursor: pointer;
+}
+.navpic {
+    display: flex;
+    justify-content: flex-end;
+    height: 14vh;
+    width: 12vw;
+    left: 50vh;
+    z-index: 8;
+    object-fit: contain;
+    padding-right: 2rem;
+    padding-top: 1rem;
+}
+.image {
+    height: 6rem;
+    width: 6rem;
+}
+.modalinput {
+    padding: 0.3rem;
+    width: auto;
+    height: auto;
+}
+.modal-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    left: 10px;
+    margin-left: 4rem;
+}
+
+.customHr {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-left: 4rem;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    font-size: 1px;
+    color: rgba(0, 0, 0, 0);
+    height: 1px;
+    background-color: black;
+}
+.info-container {
+    display: flex;
+    flex-direction: column;
+    padding-top: 4rem;
+}
+
+.profile-bio {
+    display: flex;
+    flex-direction: row;
+    margin-left: 6rem;
+    width: 40rem;
+}
+.profile-bio img {
+    width: 18rem;
+    height: 20rem;
+    filter: drop-shadow(0 0 0.75rem black);
+}
+.biotitle {
+    font-size: 30px;
+    font-family: "Inconsolata";
+}
+.bio {
+    font-size: 18px;
+    color: #404040;
+}
+.usersbio {
+    font-family: "Montserrat";
+}
+.biobutton {
+    font-size: 14px;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    font-family: "Montserrat";
+}
+.bioinput {
+    height: auto;
+    weight: 10rem;
+}
+.usersearch {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 3rem;
+}
+.findpeople {
+    height: 2rem;
+    width: 12rem;
+}
+.searchedUsers {
+    margin: 1rem;
+    font-family: "Montserrat";
+    text-decoration: none;
+    color: black;
+}
+.otherprofile {
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.userkey {
+    padding: 0.5rem;
+}
+.fas,
+.fa-dragon {
+    margin-top: 2rem;
+}
+.fa-sign-out-alt {
+    margin-top: 3rem;
+}
+
+.friendlistAccepted {
+    display: flex;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    font-family: "Montserrat";
+}
+.yourfollowers {
+    display: flex;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    color: #f88757;
+    font-family: "Inconsolata";
+    font-size: 18px;
+}
+.yourwannabes {
+    display: flex;
+    margin-left: 2rem;
+    color: #f88757;
+    font-family: "Inconsolata";
+    font-size: 18px;
+}
+.yourname {
+    color: #f88757;
+    font-size: 16px;
+    margin-right: 10rem;
+}
+.unfriendbtn {
+    margin: 1rem;
+}
+.rejectbtn {
+    margin-bottom: 2rem;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+.modalpic {
+    height: 25vh;
+    width: 21.5vw;
+    margin: 20px;
+    object-fit: contain;
+}
+
+.uploadbtn {
+    border: 2px solid #f88757;
+    color: #f88757;
+    background-color: white;
+    padding: 8px 10px;
+    border-radius: 4px;
+    font-size: 18px;
+    font-family: "Montserrat";
+    width: auto;
+    height: auto;
+    margin-left: 8rem;
+}
+
+.upload-btn-wrapper input[type="file"] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+.friendsFollowers {
+    padding: 1rem;
+}
+
+/* Messenger */
+
+.chat {
+    margin-left: 20rem;
+    margin-top: 1rem;
+    width: 50vw;
+    padding: 1rem;
+}
+.fontfortitle {
+    font-family: "Inconsolata";
+}
+.chatScroll {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    overflow: scroll;
+    height: 60vh;
+    margin-bottom: 2rem;
+}
+.chatbox {
+    resize: none;
+    height: 4rem;
+    width: 50vw;
+    margin-left: 2rem;
+    padding: 1rem;
+    border-radius: 20px;
+    outline: none;
+}
+.chatWithSend {
+    display: flex;
+    flex-direction: row;
+}
+.chatpic {
+    height: 4rem;
+    width: 4rem;
+    min-width: 4rem;
+    object-fit: cover;
+    border-radius: 50px;
+}
+.chatTimeStamp {
+    margin-left: 6rem;
+    font-family: "Inconsolata";
+    font-style: italic;
+    font-size: 12px;
+}
+.chatMessage {
+    display: flex;
+    border-radius: 20px;
+    margin: 0.5rem;
+    font-family: "Montserrat";
+    overflow: auto;
+    font-size: 14px;
+    font-weight: bold;
+}
+.followers {
+    margin: 1rem;
+    background: #fdded1;
+    padding: 1rem;
+    border-radius: 25px;
+}
+.followers:nth-child(odd) {
+    background: #d1f0fd;
+}
+.followers:nth-child(odd) .chatMessage {
+    flex-direction: row-reverse;
+}
+.chatName {
+    font-family: "Inconsolata";
+}
+.paperplane {
+    padding: 0.5rem;
+    cursor: pointer;
+}
+.chatmsg {
+    padding: 1rem;
+    font-size: 16px;
+    font-family: "Montserrat";
+    font-weight: bolder;
+}
