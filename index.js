@@ -93,23 +93,22 @@ app.get("/welcome", function(req, res) {
     }
 });
 
-app.get("/user", function(req, res) {
-    db.userInfo(req.session.userId)
-        .then(results => {
-            // console.log("feathers typing", results);
-            const avatar = results.rows[0].avatar || "/img/pig.jpg";
-            res.json({
-                id: req.session.userId,
-                first: results.rows[0].first,
-                last: results.rows[0].last,
-                bio: results.rows[0].bio,
-                avatar: avatar
-            });
-        })
-        .catch(err => {
-            console.log("err", err);
-        });
-});
+// app.get("/user", function(req, res) {
+//     db.userInfo(req.session.userId)
+//         .then(results => {
+//             // console.log("feathers typing", results);
+//             // const avatar = results.rows[0].avatar || "/img/pig.jpg";
+//             res.json({
+//                 id: req.session.userId,
+//                 first: results.rows[0].first,
+//                 last: results.rows[0].last,
+//                 bio: results.rows[0].bio
+//             });
+//         })
+//         .catch(err => {
+//             console.log("err", err);
+//         });
+// });
 
 app.get("/otherprofile/:id", function(req, res) {
     // console.log("made it to other profile");
@@ -325,9 +324,7 @@ app.post("/delete-account", async (req, res) => {
 // ########################################################################## //
 
 app.get("*", function(req, res) {
-    if (!req.session.userId && req.url != "/welcome") {
-        res.redirect("/welcome");
-    } else if (req.session.userId && req.url == "/welcome") {
+    if (!req.session.userId && req.url == "/client") {
         res.redirect("/");
     } else {
         res.sendFile(__dirname + "/index.html");
