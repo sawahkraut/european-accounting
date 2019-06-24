@@ -15,7 +15,7 @@ const particleOpt = {
             value: 90,
             density: {
                 enable: true,
-                value_area: 1000
+                value_area: 800
             }
         },
         color: {
@@ -60,7 +60,6 @@ const particleOpt = {
             enable: true,
             distance: 150,
             color: "#28357f",
-            opacity: 0.4,
             width: 1
         },
         move: {
@@ -131,30 +130,48 @@ export class App extends React.Component {
         return (
             <BrowserRouter>
                 <React.Fragment>
-                    <div>
+                    <div className="full-header">
                         <Particles params={particleOpt} />
                         <div
-                            className="wrapper"
+                            className="header-wrapper"
                             style={{
                                 position: "absolute",
                                 top: 0,
-                                left: 0
+                                left: 0,
+                                right: "10%",
+                                transform: "translate(15%, 0%)",
+                                alignItems: "center"
                             }}
                         >
-                            <div>
-                                <Link to="" className="nav">
-                                    Dienstleistungen
+                            <div className="nav-wrapper">
+                                <Link
+                                    to=""
+                                    href="#"
+                                    className="nav nav-button link eigth before after"
+                                >
+                                    Leistungen
                                 </Link>
-                                <Link to="" className="nav">
-                                    Immobilien
-                                </Link>
-                                <Link to="" className="nav">
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <Link
+                                    to=""
+                                    href="#"
+                                    className="nav nav-button link eigth before after"
+                                >
                                     Medien
                                 </Link>
-                                <Link to="" className="nav">
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <Link
+                                    to=""
+                                    href="#"
+                                    className="nav nav-button link eigth before after"
+                                >
                                     Willipedia
                                 </Link>
-                                <Link to="" className="nav-contact">
+                                &nbsp;&nbsp;&nbsp;&nbsp;
+                                <Link
+                                    to=""
+                                    className="nav nav-contact link eigth before after"
+                                >
                                     Kontakt
                                 </Link>
                             </div>
@@ -171,3 +188,6 @@ export class App extends React.Component {
 // <Link to="/chat" className="nav">
 //     Chat
 // </Link>
+// <Link to="" className="nav-contact">
+//     Kontakt
+// </Link>;

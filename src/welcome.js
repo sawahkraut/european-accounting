@@ -1,5 +1,6 @@
 import React from "react";
 import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+import { Link } from "react-router-dom";
 
 // import { HashRouter } from "react-router-dom";
 // import { Registration } from "./registration";
@@ -10,16 +11,32 @@ import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 const LandingPage = () => {
     return (
         <div className="after-header">
-            <ParallaxBanner
-                layers={[
-                    {
-                        amount: 0.1
-                    }
-                ]}
-                style={{
-                    height: "50vh"
-                }}
-            />
+            <div className="dienstleistungen-banner">
+                <ParallaxBanner
+                    layers={[
+                        {
+                            amount: 1
+                        }
+                    ]}
+                    style={{
+                        height: "50vh",
+                        width: "5%"
+                    }}
+                />
+
+                <div className="landing-text">Dienstleistungen</div>
+                <div className="container">
+                    <Link to="" className="what-we-do link eigth before after">
+                        Beratung
+                    </Link>
+                    <Link to="" className="what-we-do link eigth before after">
+                        Immobilienerwerb
+                    </Link>
+                    <Link to="" className="what-we-do link eigth before after">
+                        Steuerbelastung
+                    </Link>
+                </div>
+            </div>
             <Parallax
                 className="wrapper"
                 offsetYMax={70}
@@ -31,16 +48,14 @@ const LandingPage = () => {
                     className="banner"
                     layers={[
                         {
-                            image: "/img/mallorca-puerto-portals.jpg",
-                            amount: 0.6
+                            image: "/img/island.jpg",
+                            amount: 0.4
                         }
                     ]}
                     style={{
-                        height: "50vh"
+                        height: "70vh"
                     }}
-                >
-                    <span className="h1">Horizontal</span>
-                </ParallaxBanner>
+                />
             </Parallax>
             <ParallaxBanner
                 className="banner-two"

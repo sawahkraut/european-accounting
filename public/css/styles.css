@@ -1,18 +1,43 @@
-/* @import url("https://fonts.googleapis.com/css?family=Inconsolata|Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:100|Raleway:100&display=swap");
+/* RESETTING BROWER'S STYLES */
+
+@import "https://stas-melnikov.ru/r-blocks/r-button.css";
+@import "https://stas-melnikov.ru/r-blocks/r-link.css";
+
 /* Parallax */
-.wrapper {
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+/* PARTICLES */
+.full-header {
+    height: 90vh;
+    /* width: 100vw; */
+}
+canvas {
+    height: 90vh !important;
+}
+.header-wrapper {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.nav-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    transform: translate(25%, 0%);
+    font-family: "Montserrat", sans-serif;
 }
 .nav {
+    padding-left: 1rem;
+    margin-top: 2rem;
+    /* padding-top: 2rem; */
 }
+
 .banner-logo {
     width: 70vw;
     object-fit: contain;
-}
-.after-header {
-    background-color: #28357f;
+    margin-top: 20%;
 }
 .wrapper {
     perspective: 1px;
@@ -21,4 +46,115 @@
 .wrapper::after {
     transform: translateZ(-1px) scale(2);
     z-index: -1px;
+}
+.after-header {
+    background-color: rgba(40, 53, 127, 0.9);
+}
+.ihr-steuerberater {
+    font-size: 2.5rem;
+    font-family: "Montserrat", sans-serif;
+    align-self: center;
+    color: #6c7a89;
+    width: 60%;
+    letter-spacing: 2px;
+}
+/* BUTTON */
+
+.nav-button {
+    color: #6c7a89;
+    display: inline-block;
+    text-decoration: none;
+    justify-content: flex-end;
+    list-style: none;
+    font-size: 20px;
+}
+.nav-contact {
+    text-decoration: none;
+    justify-content: flex-end;
+    list-style: none;
+    color: black;
+    font-size: 20px;
+    margin-left: 20rem;
+    color: #6c7a89;
+    margin-top: 2rem;
+}
+.link,
+.link:visited,
+.link:hover,
+.link:active {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: relative;
+    transition: 0.5s color ease;
+    text-decoration: none;
+    color: #28357f;
+}
+.link:hover {
+    color: #28357f;
+}
+.link.before:before,
+.link.after:after {
+    content: "";
+    transition: 0.5s all ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+}
+.link.before:before {
+    top: -0.25em;
+}
+.link.after:after {
+    bottom: -0.25em;
+}
+.link.before:before,
+.link.after:after {
+    height: 5px;
+    height: 0.35rem;
+    width: 0;
+    background: #28357f;
+}
+.link.eigth:before {
+    left: 0;
+}
+.link.eigth:after {
+    right: 0;
+}
+.link.before:hover:before,
+.link.after:hover:after {
+    width: 100%;
+}
+
+/* TEXT */
+.landing-text {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    font-family: "Raleway", sans-serif;
+    font-weight: lighter;
+    font-size: 5rem;
+    width: 50%;
+}
+.what-we-do {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: white !important;
+    padding: 1rem;
+}
+
+/* WHAT WE DO */
+.dienstleistungen-banner {
+    display: flex;
+    align-items: center;
+}
+.container {
+    width: 20%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
 }
