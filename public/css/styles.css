@@ -13,6 +13,7 @@ body {
 /* PARTICLES */
 .full-header {
     height: 100vh;
+
     /* width: 100vw; */
 }
 canvas {
@@ -120,6 +121,12 @@ canvas {
 .link.before:hover:before,
 .link.after:hover:after {
     width: 100%;
+}
+
+.fas {
+    transform: translate(83rem, 0%);
+    position: absolute;
+    color: #28357f;
 }
 
 /* TEXT */

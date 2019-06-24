@@ -2,7 +2,6 @@ import React from "react";
 import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 import { Link } from "react-router-dom";
 
-// import { HashRouter } from "react-router-dom";
 // import { Registration } from "./registration";
 // import { Login } from "./login";
 

@@ -178,6 +178,7 @@ export class App extends React.Component {
                             </div>
                             <img className="banner-logo" src="/img/logo.png" />
                         </div>
+                        <i className="fas fa-chevron-down fa-2x" />
                     </div>
                     <Route path="/welcome" component={LandingPage} />
                     <Route path="/beratung" component={Beratung} />

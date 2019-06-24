@@ -26,20 +26,16 @@ const store = createStore(
 );
 
 let elem;
-if (location.pathname == "/welcome") {
-    elem = (
-        <ParallaxProvider>
-            <LandingPage />
-        </ParallaxProvider>
-    );
+if (location.pathname == "/") {
+    elem = <LandingPage />;
 } else {
     initSocket(store);
     elem = (
-        <Provider store={store}>
-            <ParallaxProvider>
+        <ParallaxProvider>
+            <Provider store={store}>
                 <App />
-            </ParallaxProvider>
-        </Provider>
+            </Provider>
+        </ParallaxProvider>
     );
 }
 
