@@ -141,8 +141,8 @@ canvas {
 .banner-willipedia {
     display: inline-flex;
     flex-direction: column-reverse;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
     color: #28357f;
     font-family: "Raleway", sans-serif;
     font-weight: lighter;
@@ -207,6 +207,9 @@ canvas {
 /* BANNERS  */
 
 .banner-willipedia {
+    display: inline-flex;
+    align-self: center;
+    flex-direction: column-reverse;
 }
 
 .test {

@@ -29,9 +29,13 @@ const LandingPage = () => {
                     <h5 className="customHr" />
                 </div>
                 <div className="container">
-                    <Link to="" className="what-we-do link eigth before after">
+                    <Link
+                        to="/beratung"
+                        className="what-we-do link eigth before after"
+                    >
                         Beratung
                     </Link>
+
                     <Link to="" className="what-we-do link eigth before after">
                         Immobilienerwerb
                     </Link>
@@ -68,7 +72,8 @@ const LandingPage = () => {
                         }
                     ]}
                     style={{
-                        height: "50vh"
+                        height: "40vh",
+                        width: "5%"
                     }}
                 />
                 <div className="banner-willipedia">

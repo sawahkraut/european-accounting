@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "./axios";
 import { BrowserRouter, Route } from "react-router-dom";
+import { Beratung } from "./beratung";
 
 import { Link } from "react-router-dom";
 // import { Parallax } from "react-scroll-parallax";
@@ -178,7 +179,8 @@ export class App extends React.Component {
                             <img className="banner-logo" src="/img/logo.png" />
                         </div>
                     </div>
-                    <LandingPage />
+                    <Route path="/welcome" component={LandingPage} />
+                    <Route path="/beratung" component={Beratung} />
                 </React.Fragment>
             </BrowserRouter>
         );
