@@ -9,9 +9,10 @@ body {
     width: 100vw;
     overflow-x: hidden;
 }
+
 /* PARTICLES */
 .full-header {
-    height: 90vh;
+    height: 100vh;
     /* width: 100vw; */
 }
 canvas {
@@ -157,4 +158,19 @@ canvas {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/* BANNERS  */
+
+.test {
+    height: 40vh;
+}
+.footer {
+    height: 20vh;
+}
+
+.bird {
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
 }

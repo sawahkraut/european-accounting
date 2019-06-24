@@ -49,7 +49,7 @@ const LandingPage = () => {
                     layers={[
                         {
                             image: "/img/island.jpg",
-                            amount: 0.4
+                            amount: 0.6
                         }
                     ]}
                     style={{
@@ -57,48 +57,54 @@ const LandingPage = () => {
                     }}
                 />
             </Parallax>
+            <div className="landing-info">
+                <ParallaxBanner
+                    layers={[
+                        {
+                            amount: 0.2
+                        }
+                    ]}
+                    style={{
+                        height: "50vh"
+                    }}
+                />
+            </div>
             <ParallaxBanner
                 className="banner-two"
-                offsetYMax={70}
-                offsetYMin={-70}
-                offsetXMax={-30}
-                offsetXMin={30}
+                offsetYMax={50}
+                offsetYMin={-50}
+                offsetXMax={-15}
+                offsetXMin={15}
                 layers={[
                     {
-                        image: "/img/minimal.jpeg",
-                        amount: 0.5
+                        image: "/img/data.jpg",
+                        amount: 0.4
                     }
                 ]}
                 style={{
-                    height: "100vh"
+                    height: "60vh"
                 }}
             />
+            <div className="test" />
+
+            <ParallaxBanner
+                className=""
+                layers={[
+                    {
+                        image: "/img/bird.jpg",
+                        amount: 0.4
+                    }
+                ]}
+                style={{
+                    height: "50vh"
+                }}
+            />
+
+            <div className="footer" />
         </div>
     );
 };
 
 export default LandingPage;
 
-// Social Network
-
-// export function Welcome() {
-//     return (
-//         <div className="welcome">
-//             <HashRouter>
-//                 <React.Fragment>
-//                     <Parallax
-//                         className="custom-class"
-//                         y={[-20, 20]}
-//                         tagOuter="figure"
-//                     >
-//                         <Image src="/img/fuji.jpeg" />
-//                     </Parallax>
-//                     ;
-//                 </React.Fragment>
-//             </HashRouter>
-//         </div>
-//     );
-// }
-// Route
-// <Route exact path="/" component={Registration} />
-// <Route path="/login" component={Login} />
+//    <img className="bird" src="/img/bird.jpg" />
