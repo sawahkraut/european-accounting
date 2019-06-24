@@ -24,7 +24,10 @@ const LandingPage = () => {
                     }}
                 />
 
-                <div className="landing-text">Dienstleistungen</div>
+                <div className="landing-text">
+                    Leistungen
+                    <h5 className="customHr" />
+                </div>
                 <div className="container">
                     <Link to="" className="what-we-do link eigth before after">
                         Beratung
@@ -57,7 +60,7 @@ const LandingPage = () => {
                     }}
                 />
             </Parallax>
-            <div className="landing-info">
+            <div className="wissensdatenbank-banner">
                 <ParallaxBanner
                     layers={[
                         {
@@ -68,6 +71,13 @@ const LandingPage = () => {
                         height: "50vh"
                     }}
                 />
+                <div className="banner-willipedia">
+                    <div>
+                        Wissensdatenbank
+                        <h5 className="customHr1" />
+                        <div className="container-willipedia" />
+                    </div>
+                </div>
             </div>
             <ParallaxBanner
                 className="banner-two"
