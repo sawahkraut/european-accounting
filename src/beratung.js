@@ -1,5 +1,6 @@
 import React from "react";
 import axios from "./axios";
+import { Parallax, ParallaxBanner } from "react-scroll-parallax";
 
 export class Beratung extends React.Component {
     constructor(props) {
@@ -17,6 +18,17 @@ export class Beratung extends React.Component {
                 </div>
 
                 <div className="beratung-box-one">
+                    <ParallaxBanner
+                        layers={[
+                            {
+                                amount: 4
+                            }
+                        ]}
+                        style={{
+                            height: "30vh",
+                            width: "5%"
+                        }}
+                    />
                     <div className="text">
                         Ob es sich um Buchhaltungsarbeiten, Lohn- und
                         Gehaltsabrechnungen, die Abwicklung des täglichen
@@ -28,16 +40,45 @@ export class Beratung extends React.Component {
                             <a href="">Mehr...</a>
                         </div>
                     </div>
+
                     <div className="title">
                         Deklarationsberatung
                         <div className="customHr-white" />
                     </div>
                 </div>
-
+                <Parallax
+                    offsetYMax={70}
+                    offsetYMin={-70}
+                    offsetXMax={-30}
+                    offsetXMin={30}
+                >
+                    <ParallaxBanner
+                        layers={[
+                            {
+                                image: "/img/apple.jpeg",
+                                amount: 0.6
+                            }
+                        ]}
+                        style={{
+                            height: "30vh"
+                        }}
+                    />
+                </Parallax>
                 <div className="beratung-box-two">
+                    <ParallaxBanner
+                        layers={[
+                            {
+                                amount: 0.2
+                            }
+                        ]}
+                        style={{
+                            height: "10vh",
+                            width: "5%"
+                        }}
+                    />
                     <div className="title1">
                         Gestaltungsberatung
-                        <div className="customHr-black" />
+                        <div className="customHr-white" />
                     </div>
                     <div className="text1">
                         Gemeinsam mit unserer Mandantschaft sind wir für die
@@ -52,7 +93,21 @@ export class Beratung extends React.Component {
                         </div>
                     </div>
                 </div>
-
+                <ParallaxBanner
+                    offsetYMax={50}
+                    offsetYMin={-50}
+                    offsetXMax={-15}
+                    offsetXMin={15}
+                    layers={[
+                        {
+                            image: "/img/flowers.jpeg",
+                            amount: 0.4
+                        }
+                    ]}
+                    style={{
+                        height: "30vh"
+                    }}
+                />
                 <div className="beratung-box-three">
                     <div className="text2">
                         Sie arbeiten als Digitales Unternehmen in einem
@@ -69,7 +124,18 @@ export class Beratung extends React.Component {
                         <div className="customHr-blue-short" />
                     </div>
                 </div>
-
+                <ParallaxBanner
+                    className=""
+                    layers={[
+                        {
+                            image: "/img/cactus.jpeg",
+                            amount: 0.4
+                        }
+                    ]}
+                    style={{
+                        height: "40vh"
+                    }}
+                />
                 <div className="beratung-box-four">
                     <div className="title3">
                         Wohn- und Ferienvermietung
