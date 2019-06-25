@@ -146,8 +146,8 @@ canvas {
     width: 50%;
 }
 .banner-willipedia {
-    display: inline-flex;
-    flex-direction: column-reverse;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: #28357f;
@@ -178,6 +178,11 @@ canvas {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
+}
+
+/* Wissensdatenbank */
+
+.wissensdatenbank-banner {
 }
 
 /* LINES */
@@ -318,7 +323,7 @@ canvas {
 }
 
 .beratung-box-two {
-    background-image: url("/img/sofa.jpeg");
+    background-image: url("/img/clouds.jpeg");
     height: 60vh;
     width: 100%;
     display: inline-flex;

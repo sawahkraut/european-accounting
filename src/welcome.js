@@ -75,13 +75,19 @@ const LandingPage = () => {
                         width: "5%"
                     }}
                 />
-                <div className="banner-willipedia">
-                    <div>
-                        Wissensdatenbank
-                        <h5 className="customHr1" />
-                        <div className="container-willipedia" />
-                    </div>
+
+                <div className="wissensdatenbank-title">
+                    Wissensdatenbank
+                    <h5 className="customHr1" />
                 </div>
+                <div className="wissensdatenbank-text">
+                    Besuchen Sie unser Willipedia: eine für Sie erstellte
+                    Wissensdatenbank mit über 600 Einträgen rund um
+                    Steuerberatung, Immobilien und vieles mehr.
+                </div>
+                <a href="https://www.europeanaccounting.net/willipedia/">
+                    Willipedia
+                </a>
             </div>
             <ParallaxBanner
                 className="banner-two"
