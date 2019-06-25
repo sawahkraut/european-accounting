@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "./axios";
 import { Parallax, ParallaxBanner } from "react-scroll-parallax";
+import { Link } from "react-router-dom";
 
 export class Beratung extends React.Component {
     constructor(props) {
@@ -153,6 +154,42 @@ export class Beratung extends React.Component {
                         <div className="mehr">
                             <a href="">Mehr...</a>
                         </div>
+                    </div>
+                </div>
+                <div className="footer">
+                    <div>
+                        <a href="/welcome">
+                            <i className="arrow fas fa-angle-double-left fa-2x" />
+                        </a>
+                    </div>
+                    <div className="footer-links">
+                        <Link className="link eigth before after" to="">
+                            Impressum &nbsp;&nbsp;
+                        </Link>
+
+                        <Link className="link eigth before after" to="">
+                            Datenschutz &nbsp;&nbsp;
+                        </Link>
+
+                        <Link className="link eigth before after" to="">
+                            About Us
+                        </Link>
+                        <img className="footer-logo" src="/img/logo.png" />
+                        <img
+                            className="image-xing"
+                            src="/img/xing.jpg"
+                            to="https://login.xing.com/?dest_url=https%3A%2F%2Fwww.xing.com%2Fprofile%2FWilli_Plattes"
+                        />
+                        <img
+                            className="image-linkedin"
+                            src="/img/linkedin.jpeg"
+                            to="https://login.xing.com/?dest_url=https%3A%2F%2Fwww.xing.com%2Fprofile%2FWilli_Plattes"
+                        />
+                        <img
+                            className="image-youtube"
+                            src="/img/youtube.png"
+                            to="https://login.xing.com/?dest_url=https%3A%2F%2Fwww.xing.com%2Fprofile%2FWilli_Plattes"
+                        />
                     </div>
                 </div>
             </div>

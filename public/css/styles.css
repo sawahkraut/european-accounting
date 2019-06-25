@@ -506,3 +506,7 @@ canvas {
     align-self: center;
     color: black;
 }
+.arrow {
+    transform: translate(45rem, -10%);
+    padding-top: 10px;
+}
