@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 
 const LandingPage = () => {
     return (
-        <div className="after-header">
+        <div id="landingpage" className="after-header">
             <div className="dienstleistungen-banner">
                 <ParallaxBanner
                     layers={[

@@ -2,11 +2,12 @@ import React from "react";
 import axios from "./axios";
 import { BrowserRouter, Route } from "react-router-dom";
 import { Beratung } from "./beratung";
-
+import { Medien } from "./media";
 import { Link } from "react-router-dom";
 // import { Parallax } from "react-scroll-parallax";
 import LandingPage from "./welcome";
 import Particles from "react-particles-js";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 // PARTICLES //
 
@@ -154,8 +155,7 @@ export class App extends React.Component {
                                 </Link>
                                 &nbsp;&nbsp;&nbsp;&nbsp;
                                 <Link
-                                    to=""
-                                    href="#"
+                                    to="/media"
                                     className="nav nav-button link eigth before after"
                                 >
                                     Medien
@@ -178,10 +178,13 @@ export class App extends React.Component {
                             </div>
                             <img className="banner-logo" src="/img/logo.png" />
                         </div>
-                        <i className="fas fa-chevron-down fa-2x" />
+                        <AnchorLink href="#landingpage">
+                            <i className="fas fa-chevron-down fa-2x" />
+                        </AnchorLink>
                     </div>
                     <Route path="/welcome" component={LandingPage} />
                     <Route path="/beratung" component={Beratung} />
+                    <Route path="/media" component={Medien} />
                 </React.Fragment>
             </BrowserRouter>
         );
