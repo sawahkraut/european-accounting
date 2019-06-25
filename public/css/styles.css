@@ -183,6 +183,109 @@ canvas {
 /* Wissensdatenbank */
 
 .wissensdatenbank-banner {
+    display: flex;
+    align-items: center;
+}
+.wissensdatenbank-title {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #28357f;
+    font-family: "Raleway", sans-serif;
+    font-weight: lighter;
+    font-size: 2.5rem;
+    width: 50%;
+}
+.wissensdatenbank-text {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    color: #28357f;
+    padding-top: 3rem;
+    padding-right: 2rem;
+    margin-bottom: 2rem;
+    width: 50%;
+}
+.empty-space {
+    height: 5vh;
+}
+.willipedia-link {
+    display: inline-flex;
+    font-weight: bolder !important;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+/* MEDIEN */
+
+.medien-banner {
+    display: flex;
+    align-items: center;
+    height: 40vh;
+}
+.medien-title {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #28357f;
+    font-family: "Raleway", sans-serif;
+    font-size: 3.5rem;
+    width: 50%;
+}
+.medien-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-family: "Montserrat", sans-serif;
+    text-decoration: none;
+    color: #28357f;
+    padding: 3rem;
+}
+
+/* FOOTER LANDING PAGE */
+
+.footer {
+}
+.footer-links {
+    margin: 0.5rem;
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    padding-left: 3rem;
+}
+
+/* FOOTER-IMAGES */
+.footer-logo {
+    width: 10rem;
+    height: 10rem;
+    object-fit: contain;
+    margin-right: 15rem;
+    margin-left: 15rem;
+}
+.image-xing {
+    height: 6rem;
+    width: 6rem;
+    object-fit: contain;
+    cursor: pointer;
+}
+.image-linkedin {
+    height: 7rem;
+    width: 7rem;
+    object-fit: contain;
+    cursor: pointer;
+}
+.image-youtube {
+    margin-left: 2rem;
+    height: 6rem;
+    width: 6rem;
+    object-fit: contain;
+    cursor: pointer;
 }
 
 /* LINES */
@@ -266,9 +369,9 @@ canvas {
     flex-direction: column-reverse;
 }
 
-.test {
+/* .test {
     height: 40vh;
-}
+} */
 .footer {
     height: 20vh;
 }

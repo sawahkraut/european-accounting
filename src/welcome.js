@@ -76,21 +76,25 @@ const LandingPage = () => {
                     }}
                 />
 
-                <div className="wissensdatenbank-title">
-                    Wissensdatenbank
-                    <h5 className="customHr1" />
-                </div>
                 <div className="wissensdatenbank-text">
                     Besuchen Sie unser Willipedia: eine für Sie erstellte
                     Wissensdatenbank mit über 600 Einträgen rund um
-                    Steuerberatung, Immobilien und vieles mehr.
+                    Steuerberatung, Immobilien und vieles mehr:
+                    <div className="empty-space" />
+                    <a
+                        className="willipedia-link link eigth before after"
+                        href="https://www.europeanaccounting.net/willipedia/"
+                    >
+                        Willipedia
+                    </a>
                 </div>
-                <a href="https://www.europeanaccounting.net/willipedia/">
-                    Willipedia
-                </a>
+                <div className="wissensdatenbank-title">
+                    Wissensdatenbank
+                    <h5 className="customHr-blue-short" />
+                </div>
             </div>
+
             <ParallaxBanner
-                className="banner-two"
                 offsetYMax={50}
                 offsetYMin={-50}
                 offsetXMax={-15}
@@ -105,7 +109,23 @@ const LandingPage = () => {
                     height: "60vh"
                 }}
             />
-            <div className="test" />
+            <div className="medien-banner">
+                <div className="medien-title">
+                    Medien
+                    <h5 className="customHr" />
+                </div>
+                <div className="medien-text">
+                    <Link className="link eigth before after" to="">
+                        News
+                    </Link>
+                    <Link className="link eigth before after" to="">
+                        Fachbücher
+                    </Link>
+                    <Link className="link eigth before after" to="">
+                        Seminare & Veranstaltungen
+                    </Link>
+                </div>
+            </div>
 
             <ParallaxBanner
                 className=""
@@ -120,7 +140,37 @@ const LandingPage = () => {
                 }}
             />
 
-            <div className="footer" />
+            <div className="footer">
+                <div className="footer-links">
+                    <Link className="link eigth before after" to="">
+                        Impressum &nbsp;&nbsp;
+                    </Link>
+
+                    <Link className="link eigth before after" to="">
+                        Datenschutz &nbsp;&nbsp;
+                    </Link>
+
+                    <Link className="link eigth before after" to="">
+                        About Us
+                    </Link>
+                    <img className="footer-logo" src="/img/logo.png" />
+                    <img
+                        className="image-xing"
+                        src="/img/xing.jpg"
+                        to="https://login.xing.com/?dest_url=https%3A%2F%2Fwww.xing.com%2Fprofile%2FWilli_Plattes"
+                    />
+                    <img
+                        className="image-linkedin"
+                        src="/img/linkedin.jpeg"
+                        to="https://login.xing.com/?dest_url=https%3A%2F%2Fwww.xing.com%2Fprofile%2FWilli_Plattes"
+                    />
+                    <img
+                        className="image-youtube"
+                        src="/img/youtube.png"
+                        to="https://login.xing.com/?dest_url=https%3A%2F%2Fwww.xing.com%2Fprofile%2FWilli_Plattes"
+                    />
+                </div>
+            </div>
         </div>
     );
 };
