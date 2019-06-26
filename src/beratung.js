@@ -45,7 +45,7 @@ export class Beratung extends React.Component {
 
                     <div className="title">
                         Deklarationsberatung
-                        <div className="customHr-white" />
+                        <div className="customHr-black" />
                     </div>
                 </div>
                 <Parallax
@@ -57,12 +57,12 @@ export class Beratung extends React.Component {
                     <ParallaxBanner
                         layers={[
                             {
-                                image: "/img/black-white.jpeg",
+                                image: "/img/pinkhouse.jpeg",
                                 amount: 0.6
                             }
                         ]}
                         style={{
-                            height: "30vh"
+                            height: "50vh"
                         }}
                     />
                 </Parallax>
@@ -80,7 +80,7 @@ export class Beratung extends React.Component {
                     />
                     <div className="title1">
                         Gestaltungsberatung
-                        <div className="customHr-white" />
+                        <div className="customHr-black" />
                     </div>
                     <div className="text1">
                         Gemeinsam mit unserer Mandantschaft sind wir für die
@@ -102,12 +102,12 @@ export class Beratung extends React.Component {
                     offsetXMin={15}
                     layers={[
                         {
-                            image: "/img/flowers.jpeg",
+                            image: "/img/bluehouse.jpeg",
                             amount: 0.4
                         }
                     ]}
                     style={{
-                        height: "30vh"
+                        height: "50vh"
                     }}
                 />
                 <div className="beratung-box-three">
@@ -123,25 +123,25 @@ export class Beratung extends React.Component {
                     </div>
                     <div className="title2">
                         Digitales Finanz- und Rechnungswesen
-                        <div className="customHr-blue-short" />
+                        <div className="customHr-black-short" />
                     </div>
                 </div>
                 <ParallaxBanner
                     className=""
                     layers={[
                         {
-                            image: "/img/cactus.jpeg",
+                            image: "/img/redwall.jpeg",
                             amount: 0.4
                         }
                     ]}
                     style={{
-                        height: "40vh"
+                        height: "50vh"
                     }}
                 />
                 <div className="beratung-box-four">
                     <div className="title3">
                         Wohn- und Ferienvermietung
-                        <div className="customHr-blue-short" />
+                        <div className="customHr-black-short" />
                     </div>
 
                     <div className="text3">

@@ -2,7 +2,6 @@ import React from "react";
 import axios from "./axios";
 import { BrowserRouter, Route } from "react-router-dom";
 import { Beratung } from "./beratung";
-import { Medien } from "./media";
 import { Kontakt } from "./contact";
 import { Link } from "react-router-dom";
 // import { Parallax } from "react-scroll-parallax";
@@ -171,7 +170,7 @@ export class App extends React.Component {
                                 </Link>
                                 &nbsp;&nbsp;&nbsp;&nbsp;
                                 <Link
-                                    to="/media"
+                                    to=""
                                     className="nav nav-button link eigth before after"
                                 >
                                     Medien
@@ -200,7 +199,7 @@ export class App extends React.Component {
                     </div>
                     <Route path="/welcome" component={LandingPage} />
                     <Route path="/beratung" component={Beratung} />
-                    <Route path="/media" component={Medien} />
+
                     <Route path="/contact" component={Kontakt} />
                 </React.Fragment>
             </BrowserRouter>

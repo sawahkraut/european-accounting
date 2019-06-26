@@ -6,6 +6,7 @@ const app = express();
 const s3 = require("./s3");
 const server = require("http").Server(app);
 const io = require("socket.io")(server, { origins: "localhost:8080" });
+const basicAuth = require("basic-auth");
 // (server, { origins: "localhost:8080" saratu.heroku.app:* });
 
 app.use(compression());
@@ -84,6 +85,20 @@ var uploader = multer({
 
 // ########################################################################## //
 // ############################### GET ROUTES ############################### //
+const auth = function(req, res, next) {
+    var creds = basicAuth(req);
+    if (!creds || creds.name != "salt" || creds.pass != "funky-chicken") {
+        res.setHeader(
+            "WWW-Authenticate",
+            'Basic realm="Please enter your credentials."'
+        );
+        res.sendStatus(401);
+    } else {
+        next();
+    }
+};
+
+app.use(auth);
 
 app.get("/welcome", function(req, res) {
     if (req.session.userId) {
