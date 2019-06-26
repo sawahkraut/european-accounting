@@ -57,7 +57,7 @@ export class Beratung extends React.Component {
                     <ParallaxBanner
                         layers={[
                             {
-                                image: "/img/apple.jpeg",
+                                image: "/img/black-white.jpeg",
                                 amount: 0.6
                             }
                         ]}

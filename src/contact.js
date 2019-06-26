@@ -116,27 +116,15 @@ export class Kontakt extends React.Component {
                     offsetXMin={15}
                     layers={[
                         {
-                            image: "/img/flowers.jpeg",
-                            amount: 0.4
+                            image: "/img/abstract.jpeg",
+                            amount: 0.6
                         }
                     ]}
                     style={{
-                        height: "30vh"
+                        height: "50vh"
                     }}
                 />
-                <div className="contact-box-three" />
-                <ParallaxBanner
-                    className=""
-                    layers={[
-                        {
-                            image: "/img/cactus.jpeg",
-                            amount: 0.4
-                        }
-                    ]}
-                    style={{
-                        height: "40vh"
-                    }}
-                />
+
                 <div className="contact-box-four" />
                 <div className="footer">
                     <div>
