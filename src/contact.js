@@ -97,6 +97,18 @@ export class Kontakt extends React.Component {
                         }}
                     />
                 </div>
+                <div className="contact-us-container">
+                    <div className="contact-us-title">Kontakt</div>
+                    <div className="contact-us-text">
+                        Haben Sie Fragen, Wünsche oder Anregungen? Bitte nehmen
+                        Sie Kontakt mit uns auf, wir helfen Ihnen gerne weiter!
+                    </div>
+                    <div className="contact-us-icon">
+                        <a href="mailto:sarah.plattes1@gmail.com">
+                            <i className="far fa-envelope fa-3x" />
+                        </a>
+                    </div>
+                </div>
                 <ParallaxBanner
                     offsetYMax={50}
                     offsetYMin={-50}

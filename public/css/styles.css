@@ -618,3 +618,27 @@ canvas {
     padding-top: 1rem;
     margin-left: 4rem;
 }
+.contact-us-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+.contact-us-title {
+    font-family: "Montserrat", sans-serif;
+    color: black;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+.contact-us-text {
+    color: black;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+}
+.fa-envelope {
+    padding: 1rem;
+    color: black;
+}
