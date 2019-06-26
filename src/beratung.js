@@ -12,7 +12,8 @@ export class Beratung extends React.Component {
 
     render() {
         return (
-            <div className="beratung-container">
+            <div id="beratung" className="beratung-container">
+                <a name="hashlocation" />
                 <div className="quote">
                     Die Zeit ist zu kostbar, um sie mit falschen Dingen zu
                     verschwenden

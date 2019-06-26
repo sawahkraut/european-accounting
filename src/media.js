@@ -11,7 +11,8 @@ export class Medien extends React.Component {
 
     render() {
         return (
-            <div className="beratung-container">
+            <div id="medien" className="beratung-container">
+                <a name="hashlocation" />
                 <div className="quote">
                     Mache keine Kompromisse wenn es um Qualität geht.
                 </div>

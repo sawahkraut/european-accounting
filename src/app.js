@@ -7,7 +7,7 @@ import { Link } from "react-router-dom";
 // import { Parallax } from "react-scroll-parallax";
 import LandingPage from "./welcome";
 import Particles from "react-particles-js";
-import AnchorLink from "react-anchor-link-smooth-scroll";
+// import AnchorLink from "react-anchor-link-smooth-scroll";
 
 // PARTICLES //
 
@@ -125,7 +125,22 @@ export class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {};
+        // this.achortarget = this.anchortarget.bind(this);
     }
+
+    // anchortarget(pageLocation) {
+    //     console.log("pageLocation", pageLocation);
+    //     //const pageLocation = this.props.location;
+    //     let anchor;
+    //     if (pageLocation == "/beratung") {
+    //         anchor = "#beratung";
+    //     } else if (pageLocation == "/welcome") {
+    //         anchor = "#landingpage";
+    //     } else if (pageLocation == "/medien") {
+    //         anchor = "#medien";
+    //     }
+    //     return anchor;
+    // }
 
     componentDidMount() {}
     render() {
@@ -178,9 +193,9 @@ export class App extends React.Component {
                             </div>
                             <img className="banner-logo" src="/img/logo.png" />
                         </div>
-                        <AnchorLink href="#landingpage">
+                        <a href="#hashlocation">
                             <i className="fas fa-chevron-down fa-2x" />
-                        </AnchorLink>
+                        </a>
                     </div>
                     <Route path="/welcome" component={LandingPage} />
                     <Route path="/beratung" component={Beratung} />

@@ -10,6 +10,7 @@ import { Link } from "react-router-dom";
 const LandingPage = () => {
     return (
         <div id="landingpage" className="after-header">
+            <a name="hashlocation" />
             <div className="dienstleistungen-banner">
                 <ParallaxBanner
                     layers={[
@@ -18,7 +19,7 @@ const LandingPage = () => {
                         }
                     ]}
                     style={{
-                        height: "50vh",
+                        height: "40vh",
                         width: "5%"
                     }}
                 />
@@ -60,7 +61,7 @@ const LandingPage = () => {
                         }
                     ]}
                     style={{
-                        height: "70vh"
+                        height: "50vh"
                     }}
                 />
             </Parallax>
@@ -107,7 +108,7 @@ const LandingPage = () => {
                     }
                 ]}
                 style={{
-                    height: "60vh"
+                    height: "40vh"
                 }}
             />
             <div className="medien-banner">

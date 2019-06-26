@@ -9,6 +9,9 @@ body {
     width: 100vw;
     overflow-x: hidden;
 }
+* {
+    scroll-behavior: smooth;
+}
 
 /* PARTICLES */
 .full-header {
@@ -154,7 +157,7 @@ canvas {
     font-family: "Raleway", sans-serif;
     font-weight: lighter;
     font-size: 3.5rem;
-    width: 50%;
+    width: 30%;
 }
 .what-we-do {
     display: flex;
@@ -164,14 +167,18 @@ canvas {
     font-size: 2rem;
     font-family: "Montserrat", sans-serif;
     text-decoration: none;
-    color: #28357f;
+    color: #f9f9f9;
     padding: 1rem;
 }
 
 /* WHAT WE DO */
 .dienstleistungen-banner {
+    background-image: url("/img/wall.jpeg");
     display: flex;
     align-items: center;
+    height: 40vh;
+    width: 100%;
+    padding-top: 1rem;
 }
 .container {
     width: 20%;
