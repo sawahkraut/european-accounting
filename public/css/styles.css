@@ -400,7 +400,7 @@ canvas {
     margin-top: 10px;
     justify-content: center;
     align-items: center;
-    width: 90%;
+    width: 70%;
     font-size: 1px;
     color: black;
     height: 1px;
@@ -528,7 +528,7 @@ canvas {
 .title2 {
     font-family: "Raleway", sans-serif;
     font-size: 3.5rem;
-    padding-left: 2.5rem;
+    padding-left: 8rem;
     align-self: center;
     color: black;
 }

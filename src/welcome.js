@@ -104,11 +104,11 @@ const LandingPage = () => {
                 layers={[
                     {
                         image: "/img/bluemetal.jpeg",
-                        amount: 0.4
+                        amount: 0.6
                     }
                 ]}
                 style={{
-                    height: "40vh"
+                    height: "50vh"
                 }}
             />
             <div className="medien-banner">
@@ -134,7 +134,7 @@ const LandingPage = () => {
                 layers={[
                     {
                         image: "/img/pyramid.jpeg",
-                        amount: 0.4
+                        amount: 0.6
                     }
                 ]}
                 style={{

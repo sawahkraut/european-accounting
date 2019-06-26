@@ -162,7 +162,7 @@ export class App extends React.Component {
                         >
                             <div className="nav-wrapper">
                                 <Link
-                                    to=""
+                                    to="/welcome"
                                     href="#"
                                     className="nav nav-button link eigth before after"
                                 >

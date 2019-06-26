@@ -123,7 +123,7 @@ export class Beratung extends React.Component {
                     </div>
                     <div className="title2">
                         Digitales Finanz- und Rechnungswesen
-                        <div className="customHr-black-short" />
+                        <div className="customHr-black-middle" />
                     </div>
                 </div>
                 <ParallaxBanner
@@ -141,7 +141,7 @@ export class Beratung extends React.Component {
                 <div className="beratung-box-four">
                     <div className="title3">
                         Wohn- und Ferienvermietung
-                        <div className="customHr-black-short" />
+                        <div className="customHr-black-middle" />
                     </div>
 
                     <div className="text3">
