@@ -135,7 +135,7 @@ canvas {
 /* TEXT */
 
 .after-header {
-    background-color: #f9f9f9;
+    background-color: white;
 }
 .landing-text {
     display: inline-flex;
@@ -173,7 +173,6 @@ canvas {
 
 /* WHAT WE DO */
 .dienstleistungen-banner {
-    background-image: url("/img/wall.jpeg");
     display: flex;
     align-items: center;
     height: 40vh;
@@ -339,6 +338,20 @@ canvas {
     height: 1px;
     background-color: #f9f9f9;
 }
+.customHr-white-short {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-left: 1rem;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    font-size: 1px;
+    color: #f9f9f9;
+    height: 1px;
+    background-color: #f9f9f9;
+}
 .customHr-blue-short {
     display: flex;
     flex-direction: row;
@@ -362,6 +375,19 @@ canvas {
     justify-content: center;
     align-items: center;
     width: 100%;
+    font-size: 1px;
+    color: black;
+    height: 1px;
+    background-color: black;
+}
+.customHr-black-short {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 11%;
     font-size: 1px;
     color: black;
     height: 1px;
@@ -516,4 +542,79 @@ canvas {
 .arrow {
     transform: translate(45rem, -10%);
     padding-top: 10px;
+}
+
+/* CONTACT - ABOUT US  */
+
+.about-us-text {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    transform: translate(45%, -50%);
+}
+.contact-box-one {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+}
+.team-container {
+    transform: translate(50%, 0%);
+}
+.team-container1 {
+    transform: translate(140%, -5%);
+}
+.contact-picture {
+    width: 25vw;
+    object-fit: contain;
+}
+
+.info1 {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-top: 1rem;
+    margin-left: 6rem;
+    padding-bottom: 0.5rem;
+}
+.info-willi {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    margin-left: 5rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+.info-yvonne {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    margin-left: 4.5rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+}
+.about-the-team {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    /* align-content: center; */
+    background-color: rgb(0, 0, 0, 0.9);
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    height: 40vh;
+}
+.about-the-team-title {
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.about-the-team-text {
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Montserrat", sans-serif;
+    padding-top: 1rem;
+    margin-left: 4rem;
 }

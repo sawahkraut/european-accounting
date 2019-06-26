@@ -3,6 +3,7 @@ import axios from "./axios";
 import { BrowserRouter, Route } from "react-router-dom";
 import { Beratung } from "./beratung";
 import { Medien } from "./media";
+import { Kontakt } from "./contact";
 import { Link } from "react-router-dom";
 // import { Parallax } from "react-scroll-parallax";
 import LandingPage from "./welcome";
@@ -185,7 +186,7 @@ export class App extends React.Component {
                                 </Link>
                                 &nbsp;&nbsp;&nbsp;&nbsp;
                                 <Link
-                                    to=""
+                                    to="/contact"
                                     className="nav nav-contact link eigth before after"
                                 >
                                     Kontakt
@@ -200,6 +201,7 @@ export class App extends React.Component {
                     <Route path="/welcome" component={LandingPage} />
                     <Route path="/beratung" component={Beratung} />
                     <Route path="/media" component={Medien} />
+                    <Route path="/contact" component={Kontakt} />
                 </React.Fragment>
             </BrowserRouter>
         );

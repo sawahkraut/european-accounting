@@ -56,7 +56,7 @@ const LandingPage = () => {
                     className="banner"
                     layers={[
                         {
-                            image: "/img/island.jpg",
+                            image: "/img/window.jpeg",
                             amount: 0.6
                         }
                     ]}
@@ -103,7 +103,7 @@ const LandingPage = () => {
                 offsetXMin={15}
                 layers={[
                     {
-                        image: "/img/data.jpg",
+                        image: "/img/bluemetal.jpeg",
                         amount: 0.4
                     }
                 ]}
@@ -133,7 +133,7 @@ const LandingPage = () => {
                 className=""
                 layers={[
                     {
-                        image: "/img/bird.jpg",
+                        image: "/img/pyramid.jpeg",
                         amount: 0.4
                     }
                 ]}
@@ -152,7 +152,7 @@ const LandingPage = () => {
                         Datenschutz &nbsp;&nbsp;
                     </Link>
 
-                    <Link className="link eigth before after" to="">
+                    <Link to="/contact" className="link eigth before after">
                         About Us
                     </Link>
                     <img className="footer-logo" src="/img/logo.png" />
