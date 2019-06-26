@@ -12,7 +12,6 @@ module.exports.addUser = function addUser(first, last, email, password) {
         INSERT INTO users (first, last, email, password)
         VALUES ($1, $2, $3, $4)
         RETURNING id;
-
          `,
         [first, last, email, password]
     );
