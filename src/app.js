@@ -7,6 +7,12 @@ import { Switch } from "react-router-dom";
 import LandingPage from "./welcome";
 import { LandingHeader } from "./header";
 import { OtherHeader } from "./otherheader";
+import ReactGA from "react-ga";
+
+function initializeReactGA() {
+    ReactGA.initialize("UA-142836947-1");
+    ReactGA.pageview("/homepage");
+}
 
 export class App extends React.Component {
     constructor(props) {
