@@ -27,8 +27,6 @@ const store = createStore(
 
 let elem;
 if (location.pathname == "/") {
-    elem = <LandingPage />;
-} else {
     initSocket(store);
     elem = (
         <ParallaxProvider>

@@ -197,9 +197,8 @@ export class App extends React.Component {
                             <i className="fas fa-chevron-down fa-2x" />
                         </a>
                     </div>
-                    <Route path="/welcome" component={LandingPage} />
+                    <Route exact path="/" component={LandingPage} />
                     <Route path="/beratung" component={Beratung} />
-
                     <Route path="/contact" component={Kontakt} />
                 </React.Fragment>
             </BrowserRouter>

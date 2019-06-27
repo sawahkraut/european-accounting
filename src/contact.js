@@ -126,6 +126,7 @@ export class Kontakt extends React.Component {
                 />
 
                 <div className="contact-box-four" />
+
                 <div className="footer">
                     <div>
                         <a href="/welcome">
