@@ -12,9 +12,9 @@ export class Beratung extends React.Component {
 
     render() {
         return (
-            <div id="beratung" className="beratung-container">
+            <div className="beratung-container">
                 <a name="hashlocation" />
-                <div className="quote">
+                <div id="beratung" className="quote">
                     Die Zeit ist zu kostbar, um sie mit falschen Dingen zu
                     verschwenden
                 </div>
@@ -159,10 +159,11 @@ export class Beratung extends React.Component {
                 </div>
                 <div className="footer">
                     <div>
-                        <a href="/welcome">
+                        <a href="/">
                             <i className="arrow fas fa-angle-double-left fa-2x" />
                         </a>
                     </div>
+
                     <div className="footer-links">
                         <Link className="link eigth before after" to="">
                             Impressum &nbsp;&nbsp;

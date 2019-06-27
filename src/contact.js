@@ -129,7 +129,7 @@ export class Kontakt extends React.Component {
 
                 <div className="footer">
                     <div>
-                        <a href="/welcome">
+                        <a href="/">
                             <i className="arrow fas fa-angle-double-left fa-2x" />
                         </a>
                     </div>

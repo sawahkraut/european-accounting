@@ -16,12 +16,70 @@ body {
 /* PARTICLES */
 .full-header {
     height: 100vh;
-
     /* width: 100vw; */
 }
 canvas {
     height: 90vh !important;
 }
+
+/* Other Header  */
+
+.full-other-header {
+    height: 20vh;
+}
+.canvas2 {
+    height: 15vh !important;
+    overflow-y: hidden;
+    /* border-bottom: 1px dotted #28357f; */
+}
+.logo-position {
+    padding-top: 1rem;
+}
+.logo-otherheader {
+    transform: translate(-35%, 0%);
+    width: 20vw;
+    object-fit: contain;
+    align-self: center;
+}
+.other-header-wrapper {
+    top: 50%;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    transform: translate(-10%, 0%);
+    padding-left: 3rem;
+    font-family: "Montserrat", sans-serif;
+}
+.other-nav-wrapper {
+    display: flex;
+    flex-direction: row;
+    transform: translate(25%, 0%);
+    font-family: "Montserrat", sans-serif;
+}
+.other-nav {
+    padding-left: 1rem;
+    margin-top: 2rem;
+}
+.other-nav-button {
+    color: #28357f;
+    display: inline-block;
+    text-decoration: none;
+    justify-content: center;
+    list-style: none;
+    font-size: 20px;
+    /* transform: translate(80%, -80%); */
+}
+.other-nav-contact {
+    text-decoration: none;
+    justify-content: flex-end;
+    list-style: none;
+    color: #28357f;
+    font-size: 20px;
+    margin-left: 20rem;
+    color: #28357f;
+    margin-top: 2rem;
+}
+/* Header  */
 .header-wrapper {
     top: 50%;
     left: 50%;
