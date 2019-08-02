@@ -85,6 +85,13 @@ if (process.env.NODE_ENV != "production") {
 
 // ########################################################################## //
 // ############################### GET ROUTES ############################### //
+app.use((req, res, next) => {
+    if (req.headers["x-forwarded-proto"].startsWith("https")) {
+        return next();
+    }
+    return res.redirect(`https://${req.hostname}${req.url}`);
+});
+
 const auth = function(req, res, next) {
     var creds = basicAuth(req);
     if (!creds || creds.name != "salt" || creds.pass != "funky-chicken") {
